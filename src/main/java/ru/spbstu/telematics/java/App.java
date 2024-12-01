@@ -32,11 +32,11 @@ public class App
     
     public static int calculateScalarProduct(int[] vectorA, int[] vectorB) throws IllegalArgumentException
     {
-        if (vectorA.length == 0 || vectorB.length == 0) {
-            throw new IllegalArgumentException("Исключение: векторы не могут быть пустыми!");
-        }
         if (vectorA.length != vectorB.length) {
             throw new IllegalArgumentException("Исключение: векторы должны иметь одинаковую длину!");
+        }
+        if (vectorA.length == 0) {
+            throw new IllegalArgumentException("Исключение: векторы не могут быть пустыми!");
         }
         int scalarProduct = 0;
         for (int i = 0; i < vectorA.length; i++) {
