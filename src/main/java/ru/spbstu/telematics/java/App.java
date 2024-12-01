@@ -4,7 +4,7 @@ public class App
 {
     public static void main(String[] args) {
         int[] vectorA = {1, 2, -3, 7};
-        int[] vectorB = {4, -2, 6};
+        int[] vectorB = {4, -2, 6, 8};
 
         System.out.print("Вектор A: ");
         printVector(vectorA);
